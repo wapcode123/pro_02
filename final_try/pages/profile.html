@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="../styles/posteventss.css">
+
+  <title>events</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+
+</head>
+<body>
+
+  <!-- header  -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">
+      Travel Connect
+    </a>
+    
+    <a href="#about">Home</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <iconify-icon icon="heroicons:bars-3-16-solid" width="24" height="24"  style="color: #ffffff"></iconify-icon>
+    </a>
+  </div>
+
+  <!--float button-->
+
+  <div class="container">
+    <ul id="floating-buttons">
+
+        <li><a href="./profile.html" class="nav-btn"> 
+          <iconify-icon icon="gg:profile" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./search.html" class="nav-btn">
+          <iconify-icon icon="pajamas:search-sm" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./events.html" class="nav-btn">
+          <iconify-icon icon="f7:plus-app" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+       <li><a  class="nav-btn" onclick="logout()">
+        <iconify-icon icon="tabler:logout" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+      </a></li>
+
+    </ul>
+
+  </div>
+
+  
+    
+ 
+      <div id="createpostdivmain" class="col-12">
+        <div id="userdetails">
+        
+        <div id="userprofilepicturediv">
+            <img src="https://nullchiropractic.com/wp-content/uploads/2017/11/profile-default-male-768x768.jpg" alt=""
+              id="userprofileimg" class="col-4 largeprofilepicture" />
+            <label for="inputforuserprofileimg" id="chooseprofileimg" class="uploadbuttons">
+              <img src="https://t4.ftcdn.net/jpg/02/17/88/73/360_F_217887350_mDfLv2ootQNeffWXT57VQr8OX7IvZKvB.jpg"
+                id="m" width="30px" />
+            </label>
+            <input type="file" id="inputforuserprofileimg" style="visibility: hidden" onchange="changeprofilepicture(event)" />
+          </div>
+          
+          
+          <div class="progress" id="progressbardiv">
+            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+              id="progressbar"></div>
+          </div>
+          
+          <div id="editabledatadiv">
+            <label for="name" class="labels">Name:</label>
+            <input type="text" id="Name" class="userdatainputs">
+
+            <label for="lastname" class="labels">Gender:</label>
+            <input type="text" id="gender" class="userdatainputs">
+
+            <label for="mobileno" class="labels">Age:</label>
+            <input type="number" id="age" class="userdatainputs">
+
+            <label for="emailaddress" class="labels">Email Address:</label>
+            <input type="email" id="emailaddress" class="userdatainputs">
+
+            <label for="emailaddress" class="labels">Media-links:</label>
+            <input type="email" id="medialink" class="userdatainputs">
+
+            <label for="emailaddress" class="labels">Departure:</label>
+            <input type="email" id="departure" class="userdatainputs">
+
+            <label for="emailaddress" class="labels">Destination:</label>
+            <input type="email" id="destination" class="userdatainputs">
+
+            
+            <label for="userdescription" class="labels">Description:</label><br>
+            <textarea id="userdescription" rows="5" placeholder="Description(Optinal)"></textarea>
+            <p id="message"></p>
+            <div class="col-12" style="display: flex; align-items: center; justify-content: flex-end; margin-top: 10px;">
+              <button id="updatedatabutton" onclick="update()">Update</button>
+           
+            </div>
+          </div> <p>sdsadsadad</p> <p>sdsadsadad</p>
+        </div>
+        
+        <!-- Progress bar 
+        <div class="progress" id="progressdiv1" style="display: none;">
+          <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+            id="progressbar1"></div>
+        </div>
+        <p id="done">Done</p>
+        <div id="uploadedmssage">
+          <p class="updatebnt">Update</p>
+        </div>
+      
+    </div> -->
+   
+ 
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/profile.js"></script>
+    <script src="../scripts/firebase.js"></script>
+
+
+</body>
+</html>

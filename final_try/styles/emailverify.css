@@ -1,0 +1,89 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to bottom, #00c6fb, #005bea);
+  }
+  
+  .div-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .div-2 {
+    text-align: center;
+  }
+  
+  .div-2 img {
+    margin-bottom: 20px;
+  }
+  
+  .div-2 h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .div-2 p {
+    color: #555;
+  }
+  
+  .buttondiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #166fff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0058e6;
+  }
+  
+  #bold {
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    .div-1 {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .div-2 h3 {
+      font-size: 20px;
+    }
+  
+    .div-2 p {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #00c6fb, #005bea);
+  margin: 0;
+}
+
+/* Hide scrollbar for WebKit-based browsers (e.g., Chrome, Safari) */
+.div-1::-webkit-scrollbar {
+  width: 10px; /* Adjust scrollbar width */
+}
+
+/* Track */
+.div-1::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey */
+  border-radius: 5px;
+}
+
+/* Handle */
+.div-1::-webkit-scrollbar-thumb {
+  background: #4696ff; /* Grey */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.div-1::-webkit-scrollbar-thumb:hover {
+  background: #2483ff; /* Dark grey */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  height: 100vh;
+}
+
+/* Form Container */
+.div-1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 90%;
+  max-width: 500px;
+  padding: 15px;
+  overflow-y: auto; /* Change overflow to auto for vertical scrollbar */
+}
+
+/* Form Elements Container */
+.div-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Additional Styles for Input Containers */
+.form-group {
+  margin-bottom: 15px; /* Adjust margin-bottom */
+}
+
+.input {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* Heading Styles */
+.div-h3 {
+  margin-bottom: 3px;
+}
+
+/* Input Styles */
+input {
+  outline: none;
+  border: 1px solid #d0d6db;
+  width: 100%;
+  font-weight: 400;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 10px;
+}
+
+/* Placeholder Text Styles */
+input::placeholder {
+  color: #9da6ae;
+}
+
+/* Sign-Up Button Styles */
+#signup {
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 6px;
+  background-color: #166fff;
+  color: white;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+#signup:hover {
+  background-color: #0058e6;
+}
+
+/* Login Link Container */
+.div-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Login Link Styles */
+#login {
+  color: #3360f8;
+  cursor: pointer;
+}
+
+/* Message Styles */
+#message {
+  padding-bottom: 15px;
+}
+
+/* Bold Text Styles */
+span {
+  font-weight: bold;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .div-1 {
+      width: 100%;
+  }
+}
+
+/* Media Query for Even Smaller Screens */
+@media (max-width: 480px) {
+  input {
+      height: 30px;
+  }
+}

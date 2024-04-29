@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/postevents.css">
+
+  <title>events</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- header  -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">
+      Travel Connect
+    </a>
+    
+    <a href="#about">Home</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <iconify-icon icon="heroicons:bars-3-16-solid" width="24" height="24"  style="color: #ffffff"></iconify-icon>
+    </a>
+  </div>
+
+  <!--float button-->
+
+  <div class="container">
+    <ul id="floating-buttons">
+
+        <li><a href="./profile.html" class="nav-btn"> 
+          <iconify-icon icon="gg:profile" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./search.html" class="nav-btn">
+          <iconify-icon icon="pajamas:search-sm" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./events.html" class="nav-btn">
+          <iconify-icon icon="f7:plus-app" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+       <li><a  class="nav-btn" onclick="logout()">
+        <iconify-icon icon="tabler:logout" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+      </a></li>
+
+    </ul>
+
+  </div>
+
+<div class="events-container">
+    <p>Create Post</p>
+    <textarea id="textarea" cols="50" rows="5" placeholder="Type here"></textarea>
+    <label for="postfiles" id="imagesforpost">UPLOAD IMAGE OR VIDEO
+      <iconify-icon icon="line-md:upload-loop" width="35" height="35"  style="color: #166fff" alt="" id="uploadbuttonicon"  ></iconify-icon>
+    </label>
+    <input type="file" id="postfiles" style="visibility: hidden" onchange="uploadimg(event)"/><br /><br />
+    <div class="progress" id="progressdiv" style="display: none;">
+      <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="progressbar"></div>
+    </div>
+    <p id="done"></p>
+    <div id="uploadedmssage">
+      <p>Uploaded</p>
+    </div>
+    <div id="submitbuttondiv">
+      <a id="createpostbtn" onclick="createpost()">Post</a>
+    </div>
+  </div>
+ 
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/postevents.js"></script>
+
+</body>
+</html>

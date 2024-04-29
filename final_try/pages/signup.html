@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/signup.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+
+</head>
+<body>
+  
+<div class="main">
+  <div class="div-1">
+    <div class="div-2">
+        <h2>Sign Up</h2>
+    </div>
+
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input type="text" class="input" id="Name" name="name" placeholder="Name" />
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input type="text" class="input" id="gender" name="gender" placeholder="Gender" />
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" class="input" id="age" name="age" placeholder="Age" />
+    </div>
+
+    <div class="form-group">
+      <label for="departure">Departure:</label>
+      <input type="text" class="input" id="departure" name="departure" placeholder="Departure is where you start your journey" />
+    </div>
+
+    <div class="form-group">
+      <label for="destination">Destination:</label>
+      <input type="text" class="input" id="destination" name="destination" placeholder="Destination is where you're going" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" class="input" id="email" name="email" placeholder="Email Address" />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="input" id="password" name="password" placeholder="Password" />
+    </div>
+
+    <div class="form-group">
+      <label for="Repassword">Re-Enter Password:</label>
+      <input type="password" class="input" id="Repassword" name="ReEnterPassword" placeholder="Re-Enter Password" />
+    </div>
+
+    <div id="message"></div> <!-- This div will display error or success messages -->
+
+    <div class="form-group">
+      <button id="signup" onclick="SignUp()" >Sign Up</button>
+    </div>
+
+    <div class="form-group">
+      <p class="div-6">Already have an account? <span id="login" onclick="Login()" > Login</span></p>
+    </div>
+  </div>
+</div>
+
+<script src="../scripts/firebase.js"></script>
+<script src="../scripts/signup.js"></script>
+
+
+</body>
+</html>

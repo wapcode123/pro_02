@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+
+  <title>home</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- header  -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">
+      Travel Connect
+    </a>
+    
+    <a href="#about">Home</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <iconify-icon icon="heroicons:bars-3-16-solid" width="24" height="24"  style="color: #ffffff"></iconify-icon>
+    </a>
+  </div>
+
+  <!--float button-->
+
+  <div class="container">
+    <ul id="floating-buttons">
+
+        <li><a href="./profile.html" class="nav-btn"> 
+          <iconify-icon icon="gg:profile" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./search.html" class="nav-btn">
+          <iconify-icon icon="pajamas:search-sm" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+        <li><a href="./events.html" class="nav-btn">
+          <iconify-icon icon="f7:plus-app" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+        </a></li>
+
+       <li><a  class="nav-btn" onclick="logout()">
+        <iconify-icon icon="tabler:logout" width="35" height="35"  style="color: #ffffff"></iconify-icon>
+      </a></li>
+
+    </ul>
+</div>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <div class="content">
+    
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <script src="../scripts/home.js"></script>
+    <script src="../scripts/index.js"></script>
+
+</body>
+</html>

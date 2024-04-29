@@ -1,0 +1,91 @@
+/* Styles for .events-container */
+.events-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the container horizontally */
+    position: relative; /* Enable positioning */
+    z-index: 1; /* Ensure the container is above other elements */
+    height: 100vh; /* Set height to 100% of viewport height */
+    display: flex; /* Use flexbox to center vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+  }
+  
+  .events-container p {
+    margin-bottom: 10px;
+  }
+  
+  #textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  #imagesforpost {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #uploadbuttonicon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  #progressdiv {
+    width: 100%;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  
+  #done {
+    color: green;
+    font-size: 15px;
+    display: none;
+  }
+  
+  #uploadedmssage p {
+    color: green;
+    font-size: 15px;
+  }
+  
+  #submitbuttondiv {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #createpostbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #createpostbtn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .events-container {
+      width: 95%;
+    }
+  }
+  
